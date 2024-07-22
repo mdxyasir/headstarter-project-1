@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+    <title>Yasir</title>
+</head>
+<body>
+
+    <div class="navbar">
+        <h2>Yasir</h2>
+        <div class="pages">
+            <a class="slide" href="/">Home</a>
+            <a class="slide" href="/skills">Skills</a>
+            <a class="slide" href="/portfolio">Portfolio</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <p1>Hello, I'm Yasir</p1>
+        <h1>I'm a<span id="typewriter"></span></h1>
+        <br>
+        <div class="links">
+            <a class="slide" href="https://github.com/mdxyasir" target="_blank">> GitHub</a>
+            <a class="slide" href="https://deviantart.com/mdxyasir" target="_blank">> DeviantArt</a>
+            <a class="slide" href="mailto:me@mdxyasir.com" target="_blank">> Mail</a>
+        </div>
+        <a href="/portfolio"><button>View My Work</button></a>
+    </div>
+
+    <script src="./js/theme.js"></script>
+    <script src="https://unpkg.com/typeit@8.0.7/dist/index.umd.js"></script>
+
+    <script>
+        new TypeIt('#typewriter', {
+            cursor: true,
+            loop: true,
+        })
+            .type(' Developer.')
+            .pause(1000)
+            .delete(11)
+            .pause(300)
+
+            .type('n Artist.')
+            .pause(1000)
+            .delete(9)
+            .pause(300)
+
+            .type(' Student.')
+            .pause(1000)
+            .delete(9)
+            .pause(300)
+
+            .go()
+    </script>
+    
+</body>
+</html>

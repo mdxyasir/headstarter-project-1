@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+        <title>Yasir</title>
+    </head>
+    <body>
+
+        <div class="navbar">
+            <h2>Yasir</h2>
+            <div class="pages">
+                <a class="slide" href="/">Home</a>
+                <a class="slide" href="/skills">Skills</a>
+                <a class="slide" href="/portfolio">Portfolio</a>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1 class="title">Portfolio</h1>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <img src="img/nitro-logo.png" />
+                            <h3>Nitro Design</h3>
+                            <p3>A Discord bot for the 10k+ member design server, Nitro Design. It features a request system, a starboard, and ...</p3>
+                            <br><br>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <img src="img/weather-app.png" />
+                            <h3>Simple Weather App</h3>
+                            <p3>A simple weather app made using Electron. Users can use the search bar to find the weather of any city.</p3>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <img src="img/todo-site.png" />
+                            <h3>To-do List</h3>
+                            <p3>A basic and easy-to-use to-do list site made using the PostgreSQL, Express, React.js, and Node.js</p3>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <script>
+            const swiper = new Swiper('.swiper', {
+                loop: true,
+            
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+
+    </body>
